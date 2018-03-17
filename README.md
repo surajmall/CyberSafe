@@ -13,4 +13,4 @@ Thus, our platform is an amalgamation of both of them, trying to provide an earl
 As a measure of safety on identification of any such instances there is an notfication sent to the the benificary added of choice.
 Notifications send to the benificary only regarding to depression and Cyber bullying type posts because of User's privacy.
 
-This can be used as a tool of parental monitoring with parents getting notification of any suspicious post on the childs timeline.
+This can be used as a tool of parental monitoring with parents getting notification of any suspicious post on the child's timeline.
