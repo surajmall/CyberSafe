@@ -69,7 +69,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home.php">Cyber Safe	</a>
+                <a class="navbar-brand" href="home.php"><strong>CyberSafe</strong></a>
             </div>
             <!-- /.navbar-header -->
 
@@ -162,9 +162,9 @@
 			<?php
 			
 				global $con;
-				$get_posts = "SELECT * FROM posts where parent_id ='$user_id'";
-				$run_posts = mysqli_query($con,$get_posts);
-				$cnt = mysqli_num_rows($run_posts);
+				$dusra = "SELECT * FROM posts where parent_id ='$user_id'";
+				$kuch = mysqli_query($con,$dusra);
+				$cnt = mysqli_num_rows($kuch);
 			?>
             <div class="row">
                 <div class="col-lg-3 col-md-6">
@@ -189,6 +189,13 @@
                         </a>
                     </div>
                 </div>
+				<?php
+			
+					global $con;
+					$dusra = "SELECT * FROM posts where parent_id ='$user_id' and flag=1";
+					$kuch = mysqli_query($con,$dusra);
+					$cnt = mysqli_num_rows($kuch);
+				?>
                 <div class="col-lg-3 col-md-6">
                     <div class="panel panel-green">
                         <div class="panel-heading">
@@ -197,12 +204,12 @@
                                     <i class="fa fa-tasks fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">12</div>
-                                    <div>New Tasks!</div>
+                                    <div class="huge"><?php echo $cnt; ?></div>
+                                    <div>bullying/Abusing like Posts</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="#lejao">
                             <div class="panel-footer">
                                 <span class="pull-left">View Details</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -211,20 +218,27 @@
                         </a>
                     </div>
                 </div>
+				<?php
+			
+					global $con;
+					$dusra = "SELECT * FROM posts where parent_id ='$user_id' and flag=0";
+					$kuch = mysqli_query($con,$dusra);
+					$cnt = mysqli_num_rows($kuch);
+				?>
                 <div class="col-lg-3 col-md-6">
                     <div class="panel panel-yellow">
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
-                                    <i class="fa fa-shopping-cart fa-5x"></i>
+                                    <i class="fa fa-comments fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">124</div>
-                                    <div>New Orders!</div>
+                                    <div class="huge"><?php echo $cnt; ?></div>
+                                    <div>Depressed/Anxiety like Posts</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="#lejao">
                             <div class="panel-footer">
                                 <span class="pull-left">View Details</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -241,12 +255,12 @@
                                     <i class="fa fa-support fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">13</div>
-                                    <div>Support Tickets!</div>
+                                    <div class="huge">0</div>
+                                    <div>Requests to be Supervisor</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="#lejao">
                             <div class="panel-footer">
                                 <span class="pull-left">View Details</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -348,51 +362,34 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="list-group">
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-comment fa-fw"></i> New Comment
-                                    <span class="pull-right text-muted small"><em>4 minutes ago</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
-                                    <span class="pull-right text-muted small"><em>27 minutes ago</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-tasks fa-fw"></i> New Task
-                                    <span class="pull-right text-muted small"><em>43 minutes ago</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                    <span class="pull-right text-muted small"><em>11:32 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-bolt fa-fw"></i> Server Crashed!
-                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-warning fa-fw"></i> Server Not Responding
-                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
-                                    <span class="pull-right text-muted small"><em>9:49 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-money fa-fw"></i> Payment Received
-                                    <span class="pull-right text-muted small"><em>Yesterday</em>
-                                    </span>
-                                </a>
+						<?php	
+							
+							$ab = "SELECT * FROM posts where parent_id ='$user_id'";
+							$dusra = mysqli_query($con,$ab);
+							$cnt = mysqli_num_rows($run_posts);
+							while($row_posts = mysqli_fetch_array($dusra)){
+							$post_id = $row_posts['post_id'];  
+							$user_id = $row_posts['user_id'];  
+							$parent_id = $row_posts['parent_id'];
+							$content = $row_posts['content'];
+							$flag = $row_posts['flag'];			
+							$post_time = $row_posts['post_time'];  
+		
+							//getting the user who has posted the thread
+							$user = "SELECT * FROM users WHERE user_id='$user_id'";
+							$run_user = mysqli_query($con,$user);
+							$row_user=mysqli_fetch_array($run_user);
+							$user_name = $row_user['user_name'];
+							
+                            echo "
+							<a href='#lejao' class='list-group-item'>
+								<i class='fa fa-comment fa-fw'></i>Suspecious Actitivity has found in $user_name
+                                <span class='pull-right text-muted small'><em>$post_time</em>
+                                </span>
+                            </a>
+							";
+							}
+                         ?>
                             </div>
                             <!-- /.list-group -->
                             <a href="#" class="btn btn-default btn-block">View All Alerts</a>
