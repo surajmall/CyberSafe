@@ -1,0 +1,135 @@
+/*
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-image: url("../images/home.jpg");
+	background-attachment: fixed;
+}
+.contain{
+    margin:0;
+	padding:0;
+	background-color:rgb(62,130,167);
+}
+#head_wrap{
+    width:100%;
+    padding:0;
+    height:90px;
+	border-bottom:1px solid brown;
+	background:rgb(160,160,160);
+}
+#header{
+    margin:0 auto;
+	padding-bottom:2px;
+}
+#menu{
+    line-height:35px;
+	padding-top:50;
+	float:right;
+	padding-right:40px;
+	padding-left:50px;
+}
+#menu li{
+    display:inline;
+	list-style:none;
+}
+#menu a{
+    margin:5px;
+	padding:5px;
+	text-decoration:none;
+	color:gray;
+	font-size:18px;
+	font-weight:bold;
+}
+#menu a:hover{
+    color:brown;
+	font-weight:bolder;
+	font-size:150%;
+
+}
+#form1{
+	line-height:100px;
+	padding-right:30px;
+}
+#form1 input{
+    height:25px;
+	padding-left:5px;
+	background-color:rgb(233, 235, 238);
+	color:rgb(62,130,167);
+	font-weight:bolder;
+}
+#form button{
+    margin-right:5px;
+}
+.content{
+    widht:1000px;
+	margin:0 auto;
+    padding-left:150px;	
+	padding-top:20px;
+}
+#user_timeline{
+    background:rgb(233, 235, 238);
+	width:350px;
+	float:left;
+	height:650px;
+	position:static;
+	border: 2px solid gray;
+}
+#content_timeline{
+   background:rgb(233, 235, 238);
+   width:600px;
+   float:right;
+   margin-right:230px;
+   border: 2px solid gray;
+}
+#user_detail img{ border:1px solid black; text-align:center; }
+#user_detail  p{
+    margin-bottom:10px;
+    font-size:120%;
+	font-weight:bolder;
+	color:rgb(62,130,167);
+}
+#user_detail strong{
+   color:rgb(101, 107, 109);
+}
+#user_detail a{
+   color:rgb(101, 107, 109);
+}
+#user_detail a:hover{
+    color:brown;
+	font-size:130%;
+    text-decoration:none;
+}
+#posts{
+    padding:20px;
+	border-bottom:1px solid black;
+}
+#posts img{
+    float:left;
+	padding:10px;
+}
