@@ -8,7 +8,9 @@ This has been a phrase which has been fed to us since our childhood. But a very 
 
 Our idea stems on two essential areas - health and social media.
 
-Thus, our platform is an amalgamation of both of them, trying to provide an early warning system for signs of different mental states and cyber bullying using the analysis of social media posts.
+Thus, our platform is an amalgamation of both of them, trying to provide an early warning system for these signs of different mental states like whether he/she is depressed, having suicidal tendency etc or case of cyber bullying using the analysis of social media posts.
+
 As a measure of safety on identification of any such instances there is an notfication sent to the the benificary added of choice.
+Notifications send to the benificary only regarding to depression and Cyber bullying type posts because of User's privacy.
 
 This can be used as a tool of parental monitoring with parents getting notification of any suspicious post on the childs timeline.
