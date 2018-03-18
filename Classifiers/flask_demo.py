@@ -34,7 +34,7 @@ def make_predict():
     #output.tolist
     #pd.Series(output).to_json(orient='values')
     #output=tweets_for_csv
-    return jsonify(result=output)
+    return jsonify(result=output,tweets=tweets_for_csv)
 
 if __name__=='__main__':
     app.run(port=9000,debug=True)
