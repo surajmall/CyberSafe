@@ -1,6 +1,6 @@
 # CyberSafe
 
-
+![alt text](http://heyjess.com/wp-content/uploads/2014/09/CSID-cyberSAFE-logo2.png)
 Social media has penetrated deep into our lives. Status updates, posts, likes, comments has surrounded us. But beyond words these can mean a lot more. In the bigger cloud of all these jargons can also lie a darker sphere of cyber bullying, which can lead to the bigger mental issues at hand.
 
 "Health is wealth"
@@ -14,3 +14,11 @@ As a measure of safety on identification of any such instances there is an notfi
 Notifications send to the benificary only regarding to depression and Cyber bullying type posts because of User's privacy.
 
 This can be used as a tool of parental monitoring with parents getting notification of any suspicious post on the child's timeline.
+
+## Dependencies
+- HTML/CSS
+- Javascript
+- PHP
+- MySQL
+- Flask
+
