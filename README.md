@@ -21,4 +21,4 @@ This can be used as a tool of parental monitoring with parents getting notificat
 - PHP
 - MySQL
 - Flask
-
+- Machine learning (NLP)
